@@ -18,6 +18,16 @@
 
 Our team made these modifications:
 
+
+### Latest block height (updated)
+
+changed *cometbft_block_latest_block_height* to *cometbft_consensus_latest_block_height*
+
+This is the number of the highest block processed by the node, indicating whether it is up to date with the network.
+
+![grafana screen](https://github.com/user-attachments/assets/2d946c9e-4fe9-4833-b8d9-e2c4723cb6cd)
+
+
 ### Block Size (updated)
   
 *cometbft_consensus_block_size_bytes*  
@@ -25,6 +35,7 @@ Our team made these modifications:
 Indicates the amount of data contained in the last block, in bytes.
 
 ![grafana screen](https://github.com/user-attachments/assets/9e880cf1-9e5c-49da-a2cc-4786270929ad)
+
 
 ### Consensus block interval (added)
 
@@ -34,13 +45,6 @@ Total time between this and the last block.
 
 ![grafana screen](https://github.com/user-attachments/assets/e9cd8552-059a-46f6-8cb4-fb5211049572)
 
-### Latest block height (updated)
-
-changed *cometbft_block_latest_block_height* to *cometbft_consensus_latest_block_height*
-
-This is the number of the highest block processed by the node, indicating whether it is up to date with the network.
-
-![grafana screen](https://github.com/user-attachments/assets/2d946c9e-4fe9-4833-b8d9-e2c4723cb6cd)
 
 ### Validator power (added)
 *cometbft_consensus_validators_power*
@@ -62,6 +66,7 @@ VoteExtensionReceiveCount is the number of vote extensions received by this node
 
 ![grafana screen](https://github.com/user-attachments/assets/98e654ec-06db-4f92-bfe1-96abd4a0e137)
 
+
 ### Mempool active outbound connections (added)
 *cometbft_mempool_active_outbound_connections*
 
@@ -77,12 +82,14 @@ Number of bytes sent to a given peer.
 
 ![grafana screen](https://github.com/user-attachments/assets/38d6ecb3-64a3-4ffd-8e5d-8dd0be223614)
 
+
 ### P2P received bytes (added)
 *cometbft_p2p_peer_receive_bytes_total*
 
 Number of bytes received from a given peer.
 
 ![grafana screen](https://github.com/user-attachments/assets/9796a037-99e5-4071-bc1d-77a98e4bfc82)
+
 
 ### P2P pending (added)
 *cometbft_p2p_peer_pending_send_bytes*
@@ -91,12 +98,14 @@ Pending bytes to be sent to a given peer.
 
 ![grafana screen](https://github.com/user-attachments/assets/3a59c54b-3787-493d-a04a-d995fb1069b7)
 
+
 ### Consensus Parameters (added)
 *cometbft_consensus_step_duration_seconds*
 
 Added “Consensus Steps” - Histogram of durations for each step in the consensus protocol.
 
 ![grafana screen](https://github.com/user-attachments/assets/77707c10-3917-492a-b6d1-48aab08695a9)
+
 
 ### Round voting power (added)
 
